@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <style>
+    table {
+      font-family: cursive;
+      border-collapse: collapse;
+      width: 100%;
+    }
+   
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+   
+    tr:nth-child(even) {
+      background-color: #c4acb8;
+    }
+    </style>
+</head>
+ 
+<body>
+    <img alt="doctor symbol" src="https://static.turbosquid.com/Preview/2014/07/06__13_24_34/01.jpg76165c4a-139e-4b04-96d1-8526334dabe4Large.jpg" style="width: 200px; height: 200px;">
+    <img alt="img" src="https://lh3.googleusercontent.com/proxy/hgKF68kDSudnM70zaB728Ua3Lj6CAElAMoj0HCbnmUGSmXJmDS8kYa9J0-1-Hv7T_g40yCxSE6HSzD1hWU8-DS38_dxlrJ1QaGCX-wcUF1z-UUiKUricadSpufj__uM23Jvyc1WXWa8gdwM" style="width:900px; height: 150px;" >
+    
+    <h1>DETAILS OF ALL THE PATIENTS:</h1>
+    <hr>
+    <br><br>
+    <table>
+    <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>GENDER</th>
+        <th>SYMPTOMS</th>
+        <th>DATE</th>
+        <th>TEMPERATURE(°C)</th>
+    </tr>
+    <tr>
+        <td th:text="${p.patientName}"></td>
+        <td th:text="${p.patientAge}"></td>
+        <td th:text="${p.patientGender}"></td>
+        <td th:text="${p.symptoms}"></td>
+        <td th:text="${p.date}"></td>
+        <td th:text="${p.temperature}"></td>
+       
+    </tr>
+    
+    <tr>
+       <td th:text="${p1.patientName}"></td>
+        <td th:text="${p1.patientAge}"></td>
+        <td th:text="${p1.patientGender}"></td>
+        <td th:text="${p1.symptoms}"></td>
+        <td th:text="${p1.date}"></td>
+        <td th:text="${p1.temperature}"></td>
+   </tr>
+    <tr>
+       <td th:text="${p2.patientName}"></td>
+        <td th:text="${p2.patientAge}"></td>
+        <td th:text="${p2.patientGender}"></td>
+        <td th:text="${p2.symptoms}"></td>
+        <td th:text="${p2.date}"></td>
+        <td th:text="${p2.temperature}"></td>
+   </tr>
+    <tr>
+       <td th:text="${p3.patientName}"></td>
+        <td th:text="${p3.patientAge}"></td>
+        <td th:text="${p3.patientGender}"></td>
+        <td th:text="${p3.symptoms}"></td>
+        <td th:text="${p3.date}"></td>
+        <td th:text="${p3.temperature}"></td>
+   </tr>
+    <tr>
+       <td th:text="${p4.patientName}"></td>
+        <td th:text="${p4.patientAge}"></td>
+        <td th:text="${p4.patientGender}"></td>
+        <td th:text="${p4.symptoms}"></td>
+        <td th:text="${p4.date}"></td>
+        <td th:text="${p4.temperature}"></td>
+   </tr>
+    <tr>
+       <td th:text="${p5.patientName}"></td>
+        <td th:text="${p5.patientAge}"></td>
+        <td th:text="${p5.patientGender}"></td>
+        <td th:text="${p5.symptoms}"></td>
+        <td th:text="${p5.date}"></td>
+        <td th:text="${p5.temperature}"></td>
+   </tr>
+   </table>
+</body>
+</html>
